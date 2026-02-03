@@ -94,6 +94,13 @@ README.md
 --->  npm start
 
 
+## **After this got to the browser and go to:
+
+-- http://10.128.200.61:3001
+
+
+
+
 🤝 Contributing
 
 - If you want to improve this project:
