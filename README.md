@@ -45,19 +45,19 @@ src/
 
 components/
 
-- Navbar.js
+- Navbar.jsx
 
-- Hero.js
+- Hero.jsx
 
-- Services.js
+- Services.jsx
 
-- Footer.js
+- Footer.jsx
 
 assets/
 
-- screenshot.png
+- screenshot.jpg
 
- App.js
+ App.jsx
 
  index.js
 
