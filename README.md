@@ -45,23 +45,23 @@ src/
 
 components/
 
-Navbar.js
+- Navbar.js
 
-Hero.js
+- Hero.js
 
-Cards.js
+- Services.js
 
-Footer.js
+- Footer.js
 
 assets/
 
-screenshot.png
+- screenshot.png
 
-App.js
+ App.js
 
-index.js
+ index.js
 
-styles.css
+ styles.css
 
 package.json
 package-lock.json
