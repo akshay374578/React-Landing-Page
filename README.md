@@ -26,7 +26,7 @@ A simple, modern, and fully responsive **Landing Page built with React and CSS**
 
 ## 📸 Screenshots
 
-![Landing Page Screenshot](./src/assets/Screenshot%202026-02-03%20210544.png)
+![Landing Page Screenshot](./src/assets/)
 
 > **Note:**  
 > Add your screenshot image inside `src/assets/` folder and name it `screenshot.png`.  
