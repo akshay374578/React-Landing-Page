@@ -36,28 +36,32 @@ A simple, modern, and fully responsive **Landing Page built with React and CSS**
 
 ## 📁 Project Structure
 
-react-landing-page/
-│
-├── public/
-│ └── index.html
-│
-├── src/
-│ ├── components/
-│ │ ├── Navbar.js
-│ │ ├── Hero.js
-│ │ ├── Cards.js
-│ │ └── Footer.js
-│ │
-│ ├── assets/
-│ │ └── screenshot.png
-│ │
-│ ├── App.js
-│ ├── index.js
-│ └── styles.css
-│
-├── package.json
-├── package-lock.json
-└── README.md
+Project Structure
+
+react-landing-page
+  public
+    index.html
+
+  src
+    assets
+      images
+      videos
+
+    components
+      Navbar
+      Hero
+      Cards
+      Footer
+
+    styles
+      main.css
+
+    App.js
+    index.js
+
+  package.json
+  package-lock.json
+  README.md
 
 
 ---
