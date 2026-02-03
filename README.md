@@ -96,7 +96,7 @@ README.md
 
 ## **After this got to the browser and go to:
 
--- http://10.128.200.61:3001
+-- http://localhost:3001
 
 
 
