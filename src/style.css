@@ -1,0 +1,348 @@
+/* src/index.css */
+
+/* 1. Basic reset and fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+.text{
+  color: #040404;
+}
+
+/* Utility buttons */
+
+
+.btn-primary {
+  display: inline-block;
+  background-color: #f38107fb;
+  color: #eeeef0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  border: 1px rgb(255, 187, 86) solid;
+  
+}
+
+.btn-primary:hover {
+  background-color: #f89e02;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #6d8ae0;
+  border: 2px solid #4e85f5;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #809bde;
+  color: #f4ecec;
+}
+
+/* Navbar */
+/* ====== NAVBAR ====== */
+/* ====== PROFESSIONAL NAVBAR ====== */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgb(48, 48, 48);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+/* Left side: logo + brand together */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Small logo styling */
+.nav-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-style: none;
+  border-radius: 10px;
+}
+
+/* Brand name styling - classy look */
+.navbar-brand {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Stylish brand split */
+.brand-main {
+   font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.45rem;   /* increased */
+  font-weight: 700;     /* more bold */
+  letter-spacing: 0.5px;
+  color: #e5f1f9;
+  text-shadow: 0 1.5px 1px rgba(251, 251, 252, 0.94);
+}
+.brand-sub {
+  color: #eef3f7;
+  text-shadow: 0 1px 1px rgba(101, 147, 207, 0.94);
+
+}
+
+/* Menu styling */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  
+}
+
+.navbar-menu a {
+  font-weight: 500;
+  color: #e1eaf2;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.navbar-menu a:hover {
+  color: #0a5cff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.9rem 0.8rem; /* a little tighter on mobile */
+  }
+
+  .navbar-menu {
+    gap: 0.8rem;   /* reduce space between items */
+  }
+
+  .navbar-menu a {
+    font-size: 0.85rem; /* slightly smaller on mobile */
+  }
+}
+
+
+
+
+/* Hero section */
+.hero {
+  background: url('assets/poster.jpg') center/cover no-repeat; /* optional background */
+  padding: 6.5rem 1.5rem;
+  text-align: center;
+  color: #faf8f8;
+  background-color: #0a5cff; /* fallback if no image */
+  border-bottom-style: groove;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  
+  
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Services */
+.services {
+  padding: 3rem 1.5rem;
+  background-color: #93989d;
+  text-align: center;
+
+}
+
+.services-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #070707;
+}
+
+/* grid of cards */
+.services-grid {
+  display: flex;
+  flex-direction: column; /* mobile: stack */
+  gap: 4.5rem;
+  align-items: center;
+  
+}
+
+/* single card */
+.services{
+  padding-bottom: 5rem;
+}
+.service-card {
+  background-color: #f5f5f5;
+  border: 2px rgb(184, 227, 249) solid;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 6px 9px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-body {
+  padding: 1rem;
+  text-align: center;
+  background-color: #e4e2e2;
+}
+
+.service-body h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+}
+
+.service-body p {
+  margin-bottom: 1rem;
+  font-size: 0.90rem;
+}
+
+/* Footer */
+/* ====== PROFESSIONAL FOOTER ====== */
+/* ====== CLEAN PROFESSIONAL FOOTER ====== */
+.footer {
+  background: #3a3a3b;
+  color: #e5e7eb;
+  padding: 2rem 2rem 1rem;
+}
+
+/* Main footer layout */
+.footer-container {
+  width: 100%;
+  padding: 0 1rem; 
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Brand section */
+.footer-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfd3dc;
+}
+
+/* Headings */
+.footer-links-section h4,
+.footer-contact-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  color: #ffffff;
+}
+
+/* Links */
+.footer-links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-section li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links-section a {
+  color: #cfd3dc;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-links-section a:hover {
+  color: #0a5cff;
+}
+
+/* Contact text */
+.footer-contact-section p {
+  margin: 0.3rem 0;
+  color: #cfd3dc;
+}
+
+/* Bottom copyright strip */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.85rem;
+  color: #bfc3cf;
+}
+
+/* ====== RESPONSIVE FIX ====== */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+.text-color{
+  color: #d4d1d1;
+}
+
+/* 2. Responsive layout for wider screens */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  .services-grid {
+    flex-direction: row; /* side-by-side cards */
+    justify-content: center;
+    align-items: stretch;
+  }
+  .service-card {
+    max-width: 300px; /* narrower per card on wide */
+  }
+}
